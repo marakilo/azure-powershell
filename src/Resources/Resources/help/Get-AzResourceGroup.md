@@ -50,7 +50,7 @@ This command gets the resource group named ContosoRG, and displays the tags asso
 ### Example 3: Show the Resource groups by location
 ```
 PS C:\> Get-AzResourceGroup |
-  Sort Location,ResourceGroupName |
+  Sort-Object Location,ResourceGroupName |
   Format-Table -GroupBy Location ResourceGroupName,ProvisioningState,Tags
 ```
 
